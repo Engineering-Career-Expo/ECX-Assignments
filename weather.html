@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<title>Weather</title>
+<style>
+* {
+	box-sizing: border-box;}
+body {	display: flex;
+	background: gray;
+	align-items:center;
+	justify-content: center;
+	}
+summary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: purple;
+	width: 25em;
+	height: 30em;
+	flex-wrap: wrap;
+	border-radius: 3em;
+	color: white;
+	text-align: center;
+	}
+
+
+</style>
+</head>
+<body>
+<summary>
+<h2>Climate Weather Forecast</h2>
+<img src="Preview-icons-fcpx-01.gif" style="width:300px;height:250px">
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+document.getElementById("demo").innerHTML = Date();
+document.getElementById("demo1").innerHTML = climateWeather();
+</script>
+
+
+</summary>
+
+</body>
+
+</html>
